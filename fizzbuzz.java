@@ -1,4 +1,4 @@
-public class Main {
+public class fizzbuzz {
   static void FizzBuzz(int number) {
     if (number % 15 == 0) {
       System.out.println("FIZZBUZZ");
