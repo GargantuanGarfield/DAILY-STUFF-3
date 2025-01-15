@@ -1,0 +1,11 @@
+integer x
+x = RandomNumber(1, 100)
+
+if x % 15 == 0
+   Put "FIZZBUZZ" to output
+elseif x % 5 == 0
+   Put "Buzz" to output
+elseif x % 3 == 0
+   Put "FIzz" to output
+else
+   Put "NO division here.... yup... no fizz.. NO buzz" to output
