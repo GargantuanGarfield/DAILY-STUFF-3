@@ -24,7 +24,7 @@ if not list:
 else:
     for i in list:
         if i == check:
-            if len(list) != properLength:
+            if check == len(list) and len(list) != properLength:
                 list.append(len(list) + 1)
                 break
             check += 1
