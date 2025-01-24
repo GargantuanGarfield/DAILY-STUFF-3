@@ -8,7 +8,7 @@ class Stairs {
         String character = input.nextLine();
         System.out.println("Number :3:3:3 -- ");
         int number = input.nextInt();
-        for (int i = number; i >= 0; --i) {
+        for (int i = number; i > 0; --i) {
             String output = "";
             output += " ".repeat(i);
             output += character;
