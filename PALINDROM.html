@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- This is the input thing for the webpage :3:3:3:3:3:3 --->
+    <form id="WORD WORD WORD"  style="align-self: center;">
+        <label for="input">ENTER YOUR STRING OR WORD OR WHATEVER HERE TO TEST IF THE AFOREMENTIONED STRING OR WORD IS A PALINDROME</label><br>
+        <textarea id="input" style="height: 489px; width: 496px; background-image: url(birdjesus.png); opacity: .4; color: black; font-size: x-large; text-align: center; vertical-align: middle;"></textarea>
+        <input type="submit">
+    </form>
+    <script>
+        // grabbing the form and input you know the vibes (and waiting for submit button)
+        let form = document.forms[0]
+        let textArea = document.getElementById('input')
+        form.addEventListener('submit', (e) => {
+
+            //preventing the page from reloading
+            e.preventDefault()
+
+            //grabbing the input text and splitting it into an array of the characters
+            let input = document.getElementById('input').value.toLowerCase()
+            let splitted = input.split("")
+
+            //reversing the array to check if its the same backwards
+            splitted = splitted.reverse()
+
+            //putting the reverse back into a string to check it agaianst input
+            splitted = splitted.join("")
+
+            //FINALLY the checking of if palindrom or not :3:3:3:3:3:3:3:3:33:3:33:33
+            if (input === splitted) {
+                alert("This silly thing is a palindrom :3:3:3:3:3:3:3:3:3")
+            } else {
+                alert("This little guy/girl/nonbinary/other word is not a palindrome 😔😔😭😭😭😭😭🥲")
+            }
+            textArea.value = ""
+        })
+    </script>
+</body>
+</html>
