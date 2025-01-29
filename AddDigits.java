@@ -1,7 +1,8 @@
 import java.util.Scanner;
-
-class AddDigits {
-    public static void main(String[] args) {
+ 
+ 
+class Main {
+    public static void AddDigits() {
         //make scanner or iinput taking
         Scanner input = new Scanner(System.in);
         
@@ -17,16 +18,22 @@ class AddDigits {
         
         //our counter
         int count = 0;
-
-
+ 
+ 
+ 
         for (int i = 0; i < digits.length; i++) {
-
+ 
+ 
             //adds every digit to the counter
             count += Integer.parseInt(digits[i]);
         }
         //displays the counter
         System.out.println(count);
-
+ 
+ 
         input.close();
+    }
+    public static void main(String[] args) {
+        AddDigits();
     }
 }
