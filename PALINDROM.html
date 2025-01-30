@@ -13,13 +13,9 @@
         <input type="submit">
     </form>
     <script>
-        // grabbing the form and input you know the vibes (and waiting for submit button)
-        let form = document.forms[0]
-        let textArea = document.getElementById('input')
-        form.addEventListener('submit', (e) => {
-
+        function palindrome(event) {
             //preventing the page from reloading
-            e.preventDefault()
+            event.preventDefault()
 
             //grabbing the input text and splitting it into an array of the characters
             let input = document.getElementById('input').value.toLowerCase()
@@ -38,7 +34,14 @@
                 alert("This little guy/girl/nonbinary/other word is not a palindrome 😔😔😭😭😭😭😭🥲")
             }
             textArea.value = ""
-        })
+        }
+        
+        // grabbing the form and input you know the vibes (and waiting for submit button)
+        let form = document.forms[0]
+        let textArea = document.getElementById('input')
+        form.addEventListener('submit', palindrome)
+
+
     </script>
 </body>
 </html>
