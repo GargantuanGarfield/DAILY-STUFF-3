@@ -96,5 +96,7 @@ public class CallMeTheLooper {
             }
             break;
         }
+    
+        scanner.close();
     }
 }
