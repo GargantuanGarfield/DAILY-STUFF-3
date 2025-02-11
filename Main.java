@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AllInOne {
+public class Main {
     public static int sum(int num1, int num2, int num3){
         int sum = num1 + num2 + num3;
         return sum;
@@ -75,8 +75,8 @@ public class AllInOne {
             
             processNumbers(num1, num2, num3);
         } catch (Exception e) {
-            System.out.println("NOOOOO!!!!! NOT THAAATTTT!!!!  I NEED AN INTEGER!!! STOOOPPPP!!!!\n\tTRY AGAIN ANOTHER DAY PLS IM ALLERGIC TO NON INT VALUES!!!!!!!");
-            System.exit(1);
+            System.out.println("NOOOOO!!!!! NOT THAAATTTT!!!!  I NEED AN INTEGER!!! STOOOPPPP!!!!\n\tTRY AGAIN ANOTHER DAY PLS IM ALLERGIC TO NON INT VALUES!!!!!!!\n\n");
+            main(null);
         }
         
         scanner.close();
