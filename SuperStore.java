@@ -149,3 +149,5 @@ class Coupon{
 //OKIE
 
 // 4. Use access modifiers appropriately and explain your choices in comments
+    // I chose the modifiers I used because the TODOs told me too in like 85% of the cases, the remaining 15% is dominated by me making every method public so that I can access them
+    // from anywhere. I don't really like being held back by access crap.
